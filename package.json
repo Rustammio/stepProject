@@ -1,5 +1,5 @@
 {
-  "name": "gulp-scss_hw2",
+  "name": "step-project_forkio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "dev",
     "start": "gulp"
   },
-  "author": "Mariia Slobodina",
+  "author": "Mariia Slobodina, Rustam",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",
