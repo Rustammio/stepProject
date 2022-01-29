@@ -1,5 +1,211 @@
 /* Mobile */
 
+.container {
+  padding: 0 7%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.about {
+  background-color: white;
+  &__container {
+    &__title {
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 28px;
+      color: #635C73;
+      text-align: center;
+      width: 80%;
+      margin: 40px auto;
+      text-transform: uppercase;
+    }
+
+    &__paragraph {
+      font-family: Lato, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      width: 80%;
+      margin: 40px auto;
+
+    }
+
+    &__button {
+      margin: 0 auto;
+      width: 80%;
+      display: flex;
+      padding: 0;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 100px;
+
+
+      &-centering {
+        display: flex;
+        text-align: center;
+        line-height: 25px;
+      }
+
+      &-watch {
+        @include buttonStyle;
+
+
+        &:before {
+          content: '';
+          display: block;
+          background-image: url('/dist/img/eye-svgrepo-com.svg');
+          width: 15px;
+          height: 15px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: 6%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:after {
+          content: "1.397";
+          display: flex;
+          background-color: rgba(223, 226, 229, 0.73);
+          color: rgb(36, 41, 47);
+          width: 35px;
+          height: 16px;
+          border-radius: 3em;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          right: 5%;
+          top: 50%;
+          transform: translateY(-50%)
+        }
+
+        //&__number {
+        //  border-left: 1px solid #d1d2d3;
+        //  width: 50%;
+        //  background-color: white;
+        //  height:100%;
+        //}
+
+      }
+
+      &-star {
+        @include buttonStyle;
+        padding-right: 50px;
+
+        &:before {
+          content: '';
+          display: block;
+          background-image: url('/dist/img/star.svg');
+          width: 15px;
+          height: 15px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: 6%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:after {
+          content: "21,038";
+          display: flex;
+          background-color: rgba(223, 226, 229, 0.73);
+          color: rgb(36, 41, 47);
+          width: 40px;
+          height: 16px;
+          border-radius: 3em;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          right: 5%;
+          top: 50%;
+          transform: translateY(-50%)
+        }
+      }
+
+      &-fork {
+        @include buttonStyle;
+
+        &:before {
+          content: '';
+          display: block;
+          background-image: url('/dist/img/git-fork.svg');
+          width: 15px;
+          height: 15px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          left: 6%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:after {
+          content: "4,391";
+          display: flex;
+          background-color: rgba(223, 226, 229, 0.73);
+          color: rgb(36, 41, 47);
+          width: 35px;
+          height: 16px;
+          border-radius: 3em;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          right: 5%;
+          top: 50%;
+          transform: translateY(-50%)
+        }
+      }
+    }
+  }
+}
 /* Tablet */
+@media only screen and (min-width: 768px){
+  .about{
+    &__container{
+      &__title{
+        font-size: 42px;
+        line-height: 42px;
+      }
+      &__paragraph{
+        font-size: 21px;
+        line-height: 32px;
+      }
+      &__button{
+        max-width:40%;
+      }
+    }
+  }
+}
 
 /* Desktop */
+@media all and (min-width: 1200px){
+  .about{
+    &__container{
+      max-width: 1200px;
+      margin: 0 auto;
+      &__title{
+        font-size: 54px;
+        line-height: 54px;
+      }
+      &__paragraph{
+        //max-width: 600px;
+      }
+      &__button{
+
+      }
+    }
+  }
+}
+
