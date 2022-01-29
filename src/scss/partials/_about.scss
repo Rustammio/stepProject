@@ -102,8 +102,7 @@
         &:before {
           content: '';
           display: block;
-          background-image: url('./dist/img/Star.svg');
-          color: black;
+          background-image: url("../../dist/img/Star.svg");
           width: 15px;
           height: 15px;
           background-repeat: no-repeat;
