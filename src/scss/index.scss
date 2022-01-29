@@ -23,7 +23,8 @@ a {
 
 .container {
   padding: 0 10px;
-  max-width: 1600px;
+  max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   // border: 2px solid yellow;
 }
