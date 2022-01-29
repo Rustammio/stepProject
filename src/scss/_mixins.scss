@@ -3,3 +3,16 @@
   padding-left: 0;
   list-style: none;
 }
+
+%button-style {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 11px 30px;
+  background: #8d81ac;
+  border-radius: 40px;
+  margin-left: 17px;
+  text-align: center;
+}
