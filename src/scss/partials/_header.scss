@@ -341,4 +341,14 @@
 
 /* Desktop */
 @media all and (min-width: 993px) {
+  .header {
+    &__container {
+      background-color: transparent;
+    }
+  }
+}
+.nav {
+  &__menu {
+    background-color: transparent;
+  }
 }
