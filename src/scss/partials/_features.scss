@@ -7,7 +7,6 @@
   overflow: hidden;
 
   &__container {
-
   }
 
   &__header {
@@ -18,7 +17,7 @@
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
-    color: #8D81AC;
+    color: #8d81ac;
   }
 
   &__text-separator {
@@ -26,15 +25,12 @@
     display: flex;
     flex-direction: column;
     margin: 40px auto;
-
-
   }
 
   &__content {
     padding: 25px 0;
 
     &-img {
-
     }
 
     &-title {
@@ -53,12 +49,11 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 21px;
-      color: #848E97;
+      color: #848e97;
     }
   }
 
   &__img {
-
     & img {
       object-fit: contain;
     }
@@ -76,15 +71,12 @@
 @media only screen and (min-width: 768px) {
   .features {
     &__container {
-
     }
 
     &__header {
-
     }
 
     &__text-separator {
-
     }
 
     &__content {
@@ -102,8 +94,6 @@
 
         & img {
           max-width: 111px;
-
-
         }
       }
 
@@ -115,19 +105,14 @@
       }
 
       &-title {
-
       }
 
       &-description {
         text-align: left;
-
       }
-
     }
 
     &__img {
-
-
     }
   }
 }
@@ -136,20 +121,20 @@
 @media all and (min-width: 1200px) {
   .features {
     width: 100%;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
 
     &-container {
       width: 1200px;
       margin: 0 auto;
       display: grid;
       grid-template-areas:
-              "text head"
-              "text  pic"
-              "text  pic"
-              "text  pic";
-      grid-template-rows:  repeat(4, 1fr);
-      grid-template-columns:  repeat(2, 1fr);
-      grid-gap: 0 5% ;
+        "text head"
+        "text  pic"
+        "text  pic"
+        "text  pic";
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 5%;
     }
 
     &__header {
@@ -165,45 +150,32 @@
       justify-content: flex-start;
       width: calc(1200px / 2);
       grid-area: text;
-
     }
 
     &__content {
       padding: 5px;
 
       &-img {
-
         & img {
-
-
         }
       }
 
       &-text-wrapper {
-
       }
 
       &-title {
-
       }
 
       &-description {
-
-
       }
-
     }
 
     &__img {
       grid-area: pic;
       display: flex;
       justify-content: right;
-      img{
-
+      img {
       }
-
     }
   }
 }
-
-
