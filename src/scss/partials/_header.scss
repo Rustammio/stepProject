@@ -7,9 +7,9 @@
   width: 100%;
   min-width: 320px;
   position: relative;
-  &__wrapper {
-    min-height: 100vh; //?
-  }
+  // &__wrapper {
+  //   min-height: 100vh; //?
+  // }
   &__container {
     background-color: $nav-bgCol;
     padding: 34px 10px 32px;
@@ -316,7 +316,7 @@
       margin-bottom: 19px;
     }
     &__version {
-      margin-bottom: 479px;
+      margin-bottom: 479px; //462?
     }
     &__button {
       font-size: 21px;
@@ -344,11 +344,35 @@
   .header {
     &__container {
       background-color: transparent;
+      padding-top: 30px;
+      padding-bottom: 127px;
+      align-items: center;
+    }
+    &__logo {
+      top: 30px;
     }
   }
-}
-.nav {
-  &__menu {
-    background-color: transparent;
+  .nav {
+    &__menu {
+      background-color: transparent;
+      position: unset;
+      padding: 0 0 0 250px;
+      gap: 48px;
+    }
+  }
+  .title-block {
+    &__title {
+      font-size: 82px;
+      line-height: 82px;
+    }
+    &__subtitle {
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__version {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 459px;
+    }
   }
 }
