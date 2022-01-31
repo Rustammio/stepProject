@@ -36,7 +36,7 @@
 
 
     &__section {
-      flex: 1 2 257px;
+
       display: grid;
       grid-template-rows: repeat(5, 20%);
       grid-template-areas:
@@ -59,7 +59,7 @@
         transform: scale(1.1);
         transition: all .6s ease-in-out;
       }
-      margin-bottom: 5%;
+
 
       &-header {
         background-color: rgba(255, 255, 255, 0.15);
@@ -224,6 +224,7 @@
       &__section {
         max-width: 257px;
         min-width:209px;
+        margin: 0;
 
         &-header {
 
