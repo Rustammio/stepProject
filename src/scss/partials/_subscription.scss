@@ -1,6 +1,6 @@
 /* Mobile */
 .sub {
-  background-image: url('../../dist/img/feedback_bg.png');
+  background-image: url('../../dist/img/people-bg.png');
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,12 +8,12 @@
   height: calc(100% + 30px);
 
   &__container {
-    backdrop-filter: blur(145px) saturate(100%) brightness(80%);
-    height: 25%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 60%
   }
 
   &__title {
@@ -22,6 +22,7 @@
     font-weight: bold;
     font-size: 28px;
     line-height: 42px;
+
   }
 
   &__grid {
@@ -31,7 +32,7 @@
     grid-template-rows: repeat(4, 457px);
     grid-template-columns: repeat(1, 257px);
     justify-content: center;
-    grid-gap: 0 5% ;
+    grid-gap: 3% ;
 
 
     &__section {
@@ -48,13 +49,13 @@
       align-items: center;
       background-color: rgba(255, 255, 255, 0.1);
       transition: all .2s ease-in-out;
-      &:hover{
-        background-color: #463048;
-        transform: scale(1.1);
-        transition: all .6s ease-in-out;
-      }
+      //&:hover{
+      //  background-color: #463048;
+      //  transform: scale(1.1);
+      //  transition: all .6s ease-in-out;
+      //}
       &:nth-child(3){
-        background-color: #463048;
+        background-color: rgba(70, 48, 72, 0.63);
         transform: scale(1.1);
         transition: all .6s ease-in-out;
       }
@@ -140,14 +141,16 @@
     }
   }
 }
-
+.violet{
+  background-color: #463048;
+}
 
 /* Tablet */
 @media only screen and (min-width: 481px) {
   .sub {
     &__container {
 
-      padding-bottom: 5%;
+      padding-bottom: 15%;
     }
 
     &__title {
@@ -162,10 +165,11 @@
       grid-template-rows: repeat(2, 457px);
       grid-template-columns: repeat(2, 50%);
       justify-items: center;
+      grid-gap: 5%;
       max-width: 666px;
       &__section {
         width: 100%;
-
+        max-width: 257px;
 
         &-header {
 
@@ -199,21 +203,28 @@
   .sub {
 
     &__container {
+      width: 100%;
       padding-bottom: 5%;
     }
 
-    &__title { font-style: normal;
+    &__title {
+      font-style: normal;
       font-weight: bold;
       font-size: 48px;
       line-height: 50px;
+      margin: 100px auto;
     }
 
-    &__grid { display: grid;
-      grid-template-rows: repeat(1, 457px);
-      grid-template-columns: repeat(4, 25%);
+    &__grid {
+      display: grid;
+      grid-template-rows: repeat(1, 460px);
+      grid-template-columns: repeat(2, 20%) 1fr 20%;
       max-width: 1200px;
+
       &__section {
-        width: 257px;
+        max-width: 257px;
+        min-width:209px;
+
         &-header {
 
 
