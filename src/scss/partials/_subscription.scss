@@ -32,7 +32,7 @@
     grid-template-rows: repeat(4, 457px);
     grid-template-columns: repeat(1, 257px);
     justify-content: center;
-    grid-gap: 3%;
+    grid-gap: 1%;
 
     &__section {
       display: grid;
@@ -53,8 +53,9 @@
       //  transition: all .6s ease-in-out;
       //}
       &:nth-child(3) {
+        margin: 11% 0;
         background-color: rgba(70, 48, 72, 0.63);
-        transform: scale(1.1);
+        transform: scale(1.15);
         transition: all 0.6s ease-in-out;
       }
 
@@ -83,11 +84,17 @@
         display: flex;
         justify-content: center;
         align-self: flex-end;
+        & span{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 62px;
+        }
       }
 
       &-period {
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 14px;
         line-height: 16px;
         grid-area: period;
@@ -108,11 +115,12 @@
       }
 
       &-license {
-        font-style: normal;
-        font-weight: normal;
+        font-style: initial;
+        font-weight: 300;
         font-size: 16px;
-        line-height: 18px;
+        line-height: 32px;
         grid-area: license;
+        height: 70%;
       }
 
       &-btn {
@@ -126,6 +134,7 @@
         font-size: 15px;
         line-height: 15px;
         place-self: center;
+        margin-bottom: 15px;
         transition: 0.6s;
         &:hover {
           background: #cecacf;
@@ -144,7 +153,7 @@
 @media only screen and (min-width: 481px) {
   .sub {
     &__container {
-      padding-bottom: 15%;
+      padding-bottom: 18%;
     }
 
     &__title {
@@ -159,11 +168,14 @@
       grid-template-rows: repeat(2, 457px);
       grid-template-columns: repeat(2, 50%);
       justify-items: center;
-      grid-gap: 5%;
+      grid-gap: 7%;
       max-width: 666px;
       &__section {
         width: 100%;
         max-width: 257px;
+        &:nth-child(3){
+          margin: 0;
+        }
 
         &-header {
         }
@@ -190,7 +202,7 @@
   .sub {
     &__container {
       width: 100%;
-      padding-bottom: 5%;
+      padding-bottom: 7%;
     }
 
     &__title {
@@ -204,8 +216,8 @@
     &__grid {
       display: grid;
       grid-template-rows: repeat(1, 460px);
-      grid-template-columns: repeat(4, 20%) /*1fr 20%*/;
-      grid-gap: 5%;
+      grid-template-columns: repeat(4, 25%) /*1fr 20%*/;
+      grid-gap: 3%;
       max-width: 1200px;
 
       &__section {

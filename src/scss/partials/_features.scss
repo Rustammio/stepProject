@@ -1,5 +1,6 @@
 /* Mobile */
 .features {
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
 
@@ -29,7 +30,7 @@
   }
 
   &__content {
-    padding: 16px 0;
+    padding: 10px 0;
 
     &-img {
     }
@@ -125,6 +126,7 @@
 /* Desktop */
 @media all and (min-width: 993px) {
   .features {
+
     width: 100%;
     background-color: #f4f4f4;
 

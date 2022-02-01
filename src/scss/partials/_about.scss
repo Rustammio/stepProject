@@ -15,7 +15,7 @@ body {
   background-color: white;
 
   &__container {
-    margin-top: 150px;
+    margin-top: 120px;
     max-width: 1200px;
 
     &__title {
@@ -27,7 +27,7 @@ body {
       color: #635C73;
       text-align: center;
       width: 80%;
-      margin: 40px auto;
+      margin: 30px auto;
       text-transform: uppercase;
     }
 
@@ -45,12 +45,12 @@ body {
 
     &__button {
       margin: 0 auto;
-      width: 80%;
+      width: 70%;
       display: flex;
       padding: 0;
       justify-content: space-around;
       flex-wrap: wrap;
-      height: 100px;
+      height: 80px;
       max-width: 250px;
       &-centering {
         display: flex;
