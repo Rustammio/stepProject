@@ -204,10 +204,12 @@
     &__grid {
       display: grid;
       grid-template-rows: repeat(1, 460px);
-      grid-template-columns: repeat(2, 20%) 1fr 20%;
+      grid-template-columns: repeat(4, 20%) /*1fr 20%*/;
+      grid-gap: 5%;
       max-width: 1200px;
 
       &__section {
+        flex: 2 2 20%;
         max-width: 257px;
         min-width: 209px;
         margin: 0;
