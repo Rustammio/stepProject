@@ -9,7 +9,7 @@
     "dev": "dev",
     "start": "gulp"
   },
-  "author": "Mariia Slobodina, Rustam",
+  "author": "Mariia Slobodina, Rustam Rustamov",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",
