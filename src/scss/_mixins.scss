@@ -30,8 +30,18 @@
   line-height: 15px;
   color: #ffffff;
   padding: 11px 30px;
-  background-color: #8d81ac;
+  background-color: $mainCol;
   border-radius: 40px;
-  // margin-left: 17px;
   text-align: center;
+}
+
+@mixin burger-line {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: $mainCol--light;
+  border-radius: 5px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.2s ease;
 }

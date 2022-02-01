@@ -1,11 +1,12 @@
 /* Mobile */
 .sub {
-  background-image: url('../../dist/img/people-bg.png');
+  background-image: url("../../dist/img/people-bg.png");
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   height: calc(100% + 30px);
+  margin-top: -15px;
 
   &__container {
     height: auto;
@@ -13,7 +14,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 60%
+    padding-bottom: 60%;
   }
 
   &__title {
@@ -22,7 +23,6 @@
     font-weight: bold;
     font-size: 28px;
     line-height: 42px;
-
   }
 
   &__grid {
@@ -32,11 +32,9 @@
     grid-template-rows: repeat(4, 457px);
     grid-template-columns: repeat(1, 257px);
     justify-content: center;
-    grid-gap: 3% ;
-
+    grid-gap: 3%;
 
     &__section {
-
       display: grid;
       grid-template-rows: repeat(5, 20%);
       grid-template-areas:
@@ -48,18 +46,17 @@
       text-align: center;
       align-items: center;
       background-color: rgba(255, 255, 255, 0.1);
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       //&:hover{
       //  background-color: #463048;
       //  transform: scale(1.1);
       //  transition: all .6s ease-in-out;
       //}
-      &:nth-child(3){
+      &:nth-child(3) {
         background-color: rgba(70, 48, 72, 0.63);
         transform: scale(1.1);
-        transition: all .6s ease-in-out;
+        transition: all 0.6s ease-in-out;
       }
-
 
       &-header {
         background-color: rgba(255, 255, 255, 0.15);
@@ -74,9 +71,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
       }
-
 
       &-price {
         grid-area: price;
@@ -101,9 +96,9 @@
         position: relative;
         &:after {
           content: "";
-          width:60px;
+          width: 60px;
           height: 5px;
-          background-color: #8D81AC;
+          background-color: #8d81ac;
           border-radius: 5px;
           position: absolute;
           bottom: -30%;
@@ -131,17 +126,17 @@
         font-size: 15px;
         line-height: 15px;
         place-self: center;
-        transition: .6s;
+        transition: 0.6s;
         &:hover {
           background: #cecacf;
           color: #7f6d78;
-          transition: .6s;
+          transition: 0.6s;
         }
       }
     }
   }
 }
-.violet{
+.violet {
   background-color: #463048;
 }
 
@@ -149,7 +144,6 @@
 @media only screen and (min-width: 481px) {
   .sub {
     &__container {
-
       padding-bottom: 15%;
     }
 
@@ -172,36 +166,28 @@
         max-width: 257px;
 
         &-header {
-
         }
 
-
         &-price {
-
         }
 
         &-period {
           width: 100%;
-
         }
 
         &-license {
-
         }
 
         &-btn {
-
         }
       }
     }
   }
 }
 
-
 /* Desktop */
 @media all and (min-width: 993px) {
   .sub {
-
     &__container {
       width: 100%;
       padding-bottom: 5%;
@@ -223,29 +209,22 @@
 
       &__section {
         max-width: 257px;
-        min-width:209px;
+        min-width: 209px;
         margin: 0;
 
         &-header {
-
-
         }
 
-
         &-price {
-
         }
 
         &-period {
-
         }
 
         &-license {
-
         }
 
         &-btn {
-
         }
       }
     }

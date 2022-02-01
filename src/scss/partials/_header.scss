@@ -7,9 +7,6 @@
   width: 100%;
   min-width: 320px;
   position: relative;
-  // &__wrapper {
-  //   min-height: 100vh; //?
-  // }
   &__container {
     background-color: $nav-bgCol;
     padding: 34px 10px 32px;
@@ -84,30 +81,16 @@
     background-color: $mainCol--light;
     border-radius: 5px;
     &::before {
-      content: "";
-      display: block;
+      @include burger-line;
       width: 15px;
-      height: 3px;
-      background-color: $mainCol--light;
-      border-radius: 5px;
-      position: absolute;
       bottom: 9px;
       left: 18px;
-      transform: translateX(-50%);
-      transition: all 0.2s ease;
     }
     &::after {
-      content: "";
-      display: block;
+      @include burger-line;
       width: 26px;
-      height: 3px;
-      background-color: $mainCol--light;
-      border-radius: 5px;
-      position: relative;
       top: 9px;
       left: 12px;
-      transform: translateX(-50%);
-      transition: all 0.2s ease;
     }
   }
   &__burger-lines--active {
@@ -129,19 +112,20 @@
   &__content-wrapper {
     // display: none;
     visibility: hidden;
+    opacity: 0;
   }
   &__content-wrapper--open {
     // display: block;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.2s linear;
+    transition: opacity 0.2s ease;
   }
 
   &__menu {
     @include list-reset;
     display: block;
     position: absolute;
-    top: 103px;
+    top: 105px;
     right: 14px;
     width: 292px;
     background-color: $menu-bgCol;
@@ -208,7 +192,7 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    color: $version-fontCol;
+    color: $textCol--light;
     margin: 0 0 416px;
   }
   &__btn-section {
@@ -267,6 +251,7 @@
       padding: 11px 35px;
     }
   }
+
   .nav {
     &__burger-menu {
       display: none;
@@ -274,6 +259,7 @@
     &__content-wrapper {
       // display: block;
       visibility: visible;
+      opacity: 1;
     }
     &__menu {
       display: flex;
@@ -305,6 +291,7 @@
       color: $mainCol;
     }
   }
+
   .title-block {
     &__title {
       font-size: 72px;
@@ -319,7 +306,7 @@
       margin-bottom: 19px;
     }
     &__version {
-      margin-bottom: 479px; //462?
+      margin-bottom: 479px;
     }
     &__button {
       font-size: 21px;
@@ -343,6 +330,7 @@
 }
 
 /* Desktop */
+
 @media all and (min-width: 993px) {
   .header {
     &__container {
@@ -359,15 +347,16 @@
       margin-left: 48px;
     }
   }
+
   .nav {
     &__menu {
       background-color: transparent;
       position: unset;
-      // padding: 0 0 0 250px;
       padding: 0;
       gap: 48px;
     }
   }
+
   .title-block {
     &__title {
       margin-top: 0;
