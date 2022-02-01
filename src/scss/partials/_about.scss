@@ -29,6 +29,7 @@ body {
       width: 80%;
       margin: 30px auto;
       text-transform: uppercase;
+
     }
 
     &__paragraph {
@@ -40,7 +41,7 @@ body {
       text-align: center;
       width: 80%;
       margin: 40px auto;
-
+      color: #323232;
     }
 
     &__button {
@@ -190,6 +191,8 @@ body {
       }
 
       &__paragraph {
+        width: 90%;
+
         font-size: 21px;
         line-height: 32px;
       }

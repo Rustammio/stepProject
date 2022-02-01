@@ -77,6 +77,10 @@
     }
 
     &__header {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 44px;
     }
 
     &__text-separator {
@@ -85,6 +89,7 @@
     &__content {
       display: flex;
       flex-direction: row;
+      padding: 4% 0;
 
       &-img {
         order: 1;
@@ -108,10 +113,15 @@
       }
 
       &-title {
+        margin: 0;
+        padding-bottom: 7px;
       }
 
       &-description {
         text-align: left;
+        margin: 0;
+        line-height: 21px;
+        font-size: 14px;
       }
     }
 
@@ -131,9 +141,10 @@
     background-color: #f4f4f4;
 
     &-container {
+
       max-width: 1200px;
-      width: 93%;
-      margin: 50px auto;
+      //width: 93%;
+      margin: 50px 0;
       display: grid;
       grid-template-areas:
         "text head"
@@ -141,8 +152,9 @@
         "text  pic"
         "text  pic";
       grid-template-rows: repeat(4, 1fr);
-      grid-template-columns: repeat(2, 50%);
-      grid-gap: 0 5%;
+      grid-template-columns: 45% 55%;
+    ;
+      grid-gap: 0 1%;
     }
 
     &__header {
@@ -152,9 +164,10 @@
       align-items: center;
       font-size: 48px;
       line-height: 50px;
-      width: 100%;
+      width: 90%;
       justify-content: flex-end;
-      white-space: break-spaces;
+      //white-space: ;
+
 
     }
 
@@ -166,7 +179,8 @@
     }
 
     &__content {
-      padding: 5px;
+      padding: 15px 0 0 0;
+
 
       &-img {
         min-width: 150px;
@@ -180,6 +194,7 @@
       }
 
       &-title {
+        margin: 10px 0;
 
 
       }
@@ -192,10 +207,13 @@
       grid-area: pic;
       display: flex;
       justify-content: right;
-      justify-items: start;
+      align-items: start;
 
       img {
         max-width: 100%;
+        position: relative;
+        top: -30px;
+
 
       }
     }
