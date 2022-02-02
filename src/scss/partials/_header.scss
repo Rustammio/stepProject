@@ -1,4 +1,4 @@
-
+/* Mobile */
 
 .header {
   background-image: url(../../../dist/img/thenotebook.png);
@@ -217,6 +217,7 @@
   }
 }
 
+/* Tablet */
 
 @media all and (min-width: 481px) {
   .header {
@@ -254,7 +255,6 @@
       display: none;
     }
     &__content-wrapper {
-
       visibility: visible;
       opacity: 1;
     }
@@ -326,7 +326,7 @@
   }
 }
 
-
+/* Desktop */
 
 @media all and (min-width: 993px) {
   .header {

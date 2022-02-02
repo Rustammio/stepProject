@@ -1,3 +1,4 @@
+/* Mobile */
 
 .features {
   margin-top: 80px;
@@ -63,6 +64,7 @@
   }
 }
 
+/* Tablet */
 
 @media only screen and (min-width: 698px) {
   .features__img {
@@ -133,15 +135,15 @@
   }
 }
 
+/* Desktop */
 
 @media all and (min-width: 993px) {
   .features {
-      margin-top: 30px;
+    margin-top: 30px;
     width: 100%;
     background-color: #f4f4f4;
 
     &-container {
-
       max-width: 1200px;
       //width: 93%;
       margin: 50px auto;
@@ -153,12 +155,10 @@
         "text  pic";
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: 45% 55%;
-    ;
       grid-gap: 0 1%;
     }
 
     &__header {
-
       grid-area: head;
       display: flex;
       align-items: center;
@@ -167,8 +167,6 @@
       width: 95%;
       justify-content: flex-start;
       //white-space: ;
-
-
     }
 
     &__text-separator {
@@ -181,12 +179,10 @@
     &__content {
       padding: 15px 0 0 0;
 
-
       &-img {
         min-width: 150px;
 
         & img {
-
         }
       }
 
@@ -195,8 +191,6 @@
 
       &-title {
         margin: 10px 0;
-
-
       }
 
       &-description {
@@ -213,8 +207,6 @@
         max-width: 100%;
         position: relative;
         top: -30px;
-
-
       }
     }
   }
