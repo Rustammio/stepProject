@@ -1,0 +1,47 @@
+@mixin list-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+@mixin buttonStyle {
+  padding: 0 45px 0 30px;
+  font-size: 10px;
+  font-family: -apple-system, "system-ui", "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  height: 26px;
+  line-height: 26px;
+  background-color: white;
+  background-repeat: repeat-x;
+  background-size: 110% 110%;
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #d1d2d3;
+  border-radius: 6px;
+  color: rgb(36, 41, 47);
+  text-decoration: none;
+  position: relative;
+}
+
+@mixin button-style--header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 11px 30px;
+  background-color: $mainCol;
+  border-radius: 40px;
+  text-align: center;
+}
+
+@mixin burger-line {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: $mainCol--light;
+  border-radius: 5px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.2s ease;
+}
