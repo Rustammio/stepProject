@@ -1,5 +1,3 @@
-
-
 .header {
   background-image: url(../../../dist/img/thenotebook.png);
   background-position: center center;
@@ -217,7 +215,6 @@
   }
 }
 
-
 @media all and (min-width: 481px) {
   .header {
     &__container {
@@ -254,7 +251,6 @@
       display: none;
     }
     &__content-wrapper {
-
       visibility: visible;
       opacity: 1;
     }
@@ -325,8 +321,6 @@
     }
   }
 }
-
-
 
 @media all and (min-width: 993px) {
   .header {

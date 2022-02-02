@@ -1,5 +1,3 @@
-
-
 .feedback {
   background-image: url(../../../dist/img/feedback_bg.png);
   background-position: center center;
@@ -74,8 +72,6 @@
   }
 }
 
-
-
 @media all and (min-width: 481px) and (max-width: 581px) {
   .feedback {
     &__container {
@@ -122,8 +118,6 @@
     }
   }
 }
-
-
 
 @media all and (min-width: 993px) {
   .feedback {
