@@ -246,6 +246,9 @@
         & {
 
         }
+        &:nth-child(1){
+          position: static;
+        }
 
         &:nth-child(3) {
           position: static;
