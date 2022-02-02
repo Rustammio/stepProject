@@ -1,0 +1,22 @@
+@import "./normalize";
+@import "./vars";
+@import "./mixins";
+@import "./partials/header";
+@import "./partials/about";
+@import "./partials/features";
+@import "./partials/feedback";
+@import "./partials/subscription";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family--Montserrat;
+}
+
+a {
+  text-decoration: none;
+}
