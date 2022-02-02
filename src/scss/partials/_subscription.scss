@@ -181,17 +181,15 @@
       &__section {
         width: 100%;
         max-width: 257px;
+        &:nth-child(1) {
+          position: static;
+        }
 
         &:nth-child(3) {
           margin: 0;
+          transform: scale(1.15);
           position: relative;
           right: 7%;
-        }
-
-        &-header {
-        }
-
-        &-price {
         }
 
         &-period {
@@ -200,9 +198,6 @@
 
         &-license {
           line-height: 18px;
-        }
-
-        &-btn {
         }
       }
     }
@@ -241,17 +236,12 @@
         min-width: 209px;
         margin: 0;
 
-        & {
-        }
         &:nth-child(1) {
           position: static;
         }
 
         &:nth-child(3) {
           position: static;
-        }
-
-        &-header {
         }
 
         &-price {
@@ -267,16 +257,10 @@
           }
         }
 
-        &-period {
-        }
-
         &-license {
           display: flex;
           align-items: center;
           justify-content: center;
-        }
-
-        &-btn {
         }
       }
     }

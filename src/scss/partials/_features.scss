@@ -33,9 +33,6 @@
   &__content {
     padding: 10px 0;
 
-    &-img {
-    }
-
     &-title {
       font-family: Montserrat, sans-serif;
       font-style: normal;
@@ -75,17 +72,11 @@
 
 @media only screen and (min-width: 481px) {
   .features {
-    &__container {
-    }
-
     &__header {
       font-style: normal;
       font-weight: bold;
       font-size: 42px;
       line-height: 44px;
-    }
-
-    &__text-separator {
     }
 
     &__content {
@@ -181,19 +172,10 @@
 
       &-img {
         min-width: 150px;
-
-        & img {
-        }
-      }
-
-      &-text-wrapper {
       }
 
       &-title {
         margin: 10px 0;
-      }
-
-      &-description {
       }
     }
 
