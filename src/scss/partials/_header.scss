@@ -1,12 +1,14 @@
 /* Mobile */
 
 .header {
-  background-image: url(../../../dist/img/thenotebook.png);
+  background-image: url(../../dist/img/thenotebook.png);
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   min-width: 320px;
   position: relative;
+  height: 100%;
   &__container {
     background-color: $nav-bgCol;
     padding: 34px 10px 32px;
@@ -331,7 +333,7 @@
 @media all and (min-width: 993px) {
   .header {
     &__container {
-      justify-content: end;
+      justify-content: flex-end;
       background-color: transparent;
       padding-top: 30px;
       padding-bottom: 115px;
