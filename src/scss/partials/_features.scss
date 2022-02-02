@@ -1,4 +1,4 @@
-/* Mobile */
+
 .features {
   margin-top: 80px;
   display: flex;
@@ -63,7 +63,7 @@
   }
 }
 
-/* Tablet */
+
 @media only screen and (min-width: 698px) {
   .features__img {
     display: flex;
@@ -133,7 +133,7 @@
   }
 }
 
-/* Desktop */
+
 @media all and (min-width: 993px) {
   .features {
       margin-top: 30px;

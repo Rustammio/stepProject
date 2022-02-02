@@ -1,4 +1,4 @@
-/* Mobile */
+
 
 .header {
   background-image: url(../../../dist/img/thenotebook.png);
@@ -139,8 +139,6 @@
     border-bottom: 3px solid #3b3b3b;
     position: relative;
 
-    // &:active,
-    // &:focus::before <-- не работает как нужно. и то с tabindex="1" у item
     &:hover::before {
       content: "";
       position: absolute;
@@ -150,8 +148,7 @@
       background-color: $mainCol;
       top: 19px;
     }
-    // &:active,
-    // &:focus
+
     &:hover {
       .nav__link {
         color: $mainCol;
@@ -219,7 +216,7 @@
     margin: 0;
   }
 }
-/* Tablet */
+
 
 @media all and (min-width: 481px) {
   .header {
@@ -257,7 +254,7 @@
       display: none;
     }
     &__content-wrapper {
-      // display: block;
+
       visibility: visible;
       opacity: 1;
     }
@@ -329,7 +326,7 @@
   }
 }
 
-/* Desktop */
+
 
 @media all and (min-width: 993px) {
   .header {

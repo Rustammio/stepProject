@@ -1,4 +1,4 @@
-/* Mobile */
+
 body {
   background-color: white;
   min-width: 320px;
@@ -95,12 +95,7 @@ body {
           transform: translateY(-50%)
         }
 
-        //&__number {
-        //  border-left: 1px solid #d1d2d3;
-        //  width: 50%;
-        //  background-color: white;
-        //  height:100%;
-        //}
+
 
       }
 
@@ -181,7 +176,6 @@ body {
   }
 }
 
-/* Tablet */
 @media only screen and (min-width: 481px) {
   .about {
     &__container {
@@ -204,7 +198,6 @@ body {
   }
 }
 
-/* Desktop */
 @media all and (min-width: 1200px) {
   .about {
     &__container {

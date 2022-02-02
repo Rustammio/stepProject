@@ -1,4 +1,4 @@
-/* Mobile */
+
 .sub {
   background-image: url("../../dist/img/people-bg.png");
   color: white;
@@ -47,11 +47,7 @@
       align-items: center;
       background-color: rgba(255, 255, 255, 0.1);
       transition: all 0.2s ease-in-out;
-      //&:hover{
-      //  background-color: #463048;
-      //  transform: scale(1.1);
-      //  transition: all .6s ease-in-out;
-      //}
+
       &:nth-child(1){
         position: relative;
         top: 10%;
@@ -161,7 +157,7 @@
   background-color: #463048;
 }
 
-/* Tablet */
+
 @media only screen and (min-width: 481px) {
   .sub {
     &__container {
@@ -215,7 +211,7 @@
   }
 }
 
-/* Desktop */
+
 @media all and (min-width: 993px) {
   .sub {
 
