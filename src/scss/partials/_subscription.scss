@@ -89,8 +89,10 @@
         & span {
           font-style: normal;
           font-weight: 400;
-          font-size: 60px;
-          line-height: 62px;
+          font-size: 70px;
+          //line-height: 62px;
+          align-items: center;
+
         }
       }
 
@@ -191,6 +193,14 @@
           position: relative;
           right: 7%;
         }
+        &-price{
+          align-items: center;
+          & span {
+            font-size: 70px;
+            line-height: 90px;
+          }
+
+        }
 
         &-period {
           width: 100%;
@@ -252,7 +262,7 @@
           text-transform: uppercase;
 
           & span {
-            font-size: 60px;
+            font-size: 70px;
             line-height: 90px;
           }
         }
