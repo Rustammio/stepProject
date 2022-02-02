@@ -1,3 +1,4 @@
+/* Mobile */
 
 .sub {
   background-image: url("../../dist/img/people-bg.png");
@@ -48,7 +49,7 @@
       background-color: rgba(255, 255, 255, 0.1);
       transition: all 0.2s ease-in-out;
 
-      &:nth-child(1){
+      &:nth-child(1) {
         position: relative;
         top: 10%;
       }
@@ -57,7 +58,6 @@
         background-color: rgba(70, 48, 72, 0.63);
         transform: scale(1.2);
         transition: all 0.6s ease-in-out;
-
       }
 
       &-header {
@@ -73,7 +73,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
       }
 
       &-price {
@@ -119,14 +118,12 @@
       }
 
       &-license {
-
         font-style: initial;
         font-weight: 100;
         font-size: 16px;
         line-height: 32px;
         grid-area: license;
         height: 70%;
-
       }
 
       &-btn {
@@ -157,6 +154,7 @@
   background-color: #463048;
 }
 
+/* Tablet */
 
 @media only screen and (min-width: 481px) {
   .sub {
@@ -184,20 +182,14 @@
         width: 100%;
         max-width: 257px;
         &:nth-child(1) {
-        position: static;
-      }
+          position: static;
+        }
 
         &:nth-child(3) {
           margin: 0;
           transform: scale(1.15);
           position: relative;
           right: 7%;
-        }
-
-        &-header {
-        }
-
-        &-price {
         }
 
         &-period {
@@ -207,18 +199,15 @@
         &-license {
           line-height: 18px;
         }
-
-        &-btn {
-        }
       }
     }
   }
 }
 
+/* Desktop */
 
 @media all and (min-width: 993px) {
   .sub {
-
     &__container {
       padding-top: 0;
       width: 100%;
@@ -247,19 +236,12 @@
         min-width: 209px;
         margin: 0;
 
-        & {
-
-        }
-        &:nth-child(1){
+        &:nth-child(1) {
           position: static;
         }
 
         &:nth-child(3) {
           position: static;
-
-        }
-
-        &-header {
         }
 
         &-price {
@@ -269,26 +251,16 @@
           line-height: 90px;
           text-transform: uppercase;
 
-
           & span {
-
             font-size: 60px;
             line-height: 90px;
           }
-        }
-
-        &-period {
         }
 
         &-license {
           display: flex;
           align-items: center;
           justify-content: center;
-
-        }
-
-        &-btn {
-
         }
       }
     }
