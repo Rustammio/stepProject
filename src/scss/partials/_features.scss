@@ -54,9 +54,21 @@
   }
 
   &__img {
+    display: flex;
+    align-items: flex-start;
+    min-width: 320px;
+    border: none;
+    padding: 0;
+    margin: 0;
+
     & img {
       object-fit: contain;
       max-height: 381px;
+      //min-height: 317px;
+      //overflow-x: hidden;
+
+      border: none;
+
     }
   }
 }
@@ -119,6 +131,7 @@
     }
 
     &__img {
+
       & img {
         max-height: 519px;
       }
